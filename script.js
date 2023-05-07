@@ -1,3 +1,5 @@
+// https://linku.la/jasima/data.json
+// https://github.com/niftg/tokipona-pu-otmjson
 const formEl = document.querySelector('form');
 
 formEl.addEventListener('submit', (e) => {
