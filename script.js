@@ -4,7 +4,7 @@ formEl.addEventListener('submit', (e) => {
   e.preventDefault();
   const textInput = formEl.querySelector('input');
   const selectInput = formEl.querySelector('select');
-  const searchValue = textInput.value;
+  const searchValue = textInput.value.toLowerCase();
   const selectValue = selectInput.value;
 
   fetch('dict.json')
