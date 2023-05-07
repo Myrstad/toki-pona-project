@@ -26,6 +26,10 @@ formEl.addEventListener('submit', (e) => {
         if (word.variations[0]) {
           if (word.variations[0].form.includes(searchValue)) wordMatch = true;
         }
+        //search value in english stranslation
+        // word.translations.forEach((translation) => {
+        //   if (translation.forms[0].includes(searchValue)) wordMatch = true;
+        // });
         //no filter type
         if (!selectValue) typeMatch = true;
         //filter type value matches a translation type
@@ -74,7 +78,7 @@ function createColumns(dict) {
 function createCardString(wordData) {
   //console.log(wordData);
   let string = `
-    <div class="card">
+    <div class="card" data-word="${wordData.entry.form}">
       <h3>${wordData.entry.form}
       ${
         wordData.variations[0]
