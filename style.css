@@ -201,7 +201,7 @@ footer {
   text-align: center;
   padding: 2rem 2rem;
   background-color: var(--light-grey);
-  border-radius: 100vmax;
+  border-radius: 50px;
 }
 
 footer a {
